@@ -2,24 +2,32 @@ package org.example.ui;
 
 public class TextoUI {
 
-    public static final String msgBoasVindas = """
+    public static final String menuPrincipal = """
             +=========================================+
-            |                Bem Vindo                |
+            |                                         |
             |      Escolha abaixo a opção que deseja  |
             |                                         |
-            |                                    v0.01|
             |                                         |
             |                                         |
-            |   1 - Simulador de batalha              |
-            |   2 - Força do exercito                 |
-            |   3 - Soma de gastos                    |
-            |   0 - Sair                              |
+            |                                         |
+            |           \u001B[33m1 - Simulador de batalha\u001B[0m      |
+            |           \u001B[32m2 - Força do exercito\u001B[0m         |
+            |           \u001B[36m3 - Soma de gastos\u001B[0m            |
+            |           \u001B[31m0 - Sair\u001B[0m                      |
             +=========================================+
             """;
 
+    public static final String msgBoasVindas = """
+            +=========================================+
+            
+            
+            """;
 
-
-
+    public static final String msgFechamentoPrograma = """
+            +=========================================+
+            |               \u001B[31mAté logo\u001B[0m                  |
+            +=========================================+
+            """;
 
 
     //Modificadores de Cor ANSI

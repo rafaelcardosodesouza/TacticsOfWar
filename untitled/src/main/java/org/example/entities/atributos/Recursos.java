@@ -6,18 +6,20 @@ public class Recursos {
     private int velocidade;
     private int alimento;
     private int maoDeObra;
+    private int metal;
     private int combustivel;
     private double valorDiario;
     private int alimentoDiario;
     private int maoDeObraDiario;
     private int combustivelDiario;
 
-    public Recursos(double valor, double vida, int velocidade, int alimento, int maoDeObra, int combustivel, double valorDiario, int alimentoDiario, int maoDeObraDiario, int combustivelDiario) {
+    public Recursos(double valor, double vida, int velocidade, int alimento, int maoDeObra, int metal, int combustivel, double valorDiario, int alimentoDiario, int maoDeObraDiario, int combustivelDiario) {
         this.valor = valor;
         this.vida = vida;
         this.velocidade = velocidade;
         this.alimento = alimento;
         this.maoDeObra = maoDeObra;
+        this.metal = metal;
         this.combustivel = combustivel;
         this.valorDiario = valorDiario;
         this.alimentoDiario = alimentoDiario;
@@ -103,5 +105,22 @@ public class Recursos {
 
     public void setCombustivelDiario(int combustivelDiario) {
         this.combustivelDiario = combustivelDiario;
+    }
+
+    @Override
+    public String toString() {
+        return "Recursos{" +
+                "valor=" + valor +
+                ", vida=" + vida +
+                ", velocidade=" + velocidade +
+                ", alimento=" + alimento +
+                ", maoDeObra=" + maoDeObra +
+                ", metal=" + metal +
+                ", combustivel=" + combustivel +
+                ", valorDiario=" + valorDiario +
+                ", alimentoDiario=" + alimentoDiario +
+                ", maoDeObraDiario=" + maoDeObraDiario +
+                ", combustivelDiario=" + combustivelDiario +
+                '}';
     }
 }

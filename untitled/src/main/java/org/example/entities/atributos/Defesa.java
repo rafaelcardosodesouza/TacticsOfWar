@@ -74,4 +74,17 @@ public class Defesa {
     public void setDefesaContraEdificio(double defesaContraEdificio) {
         this.defesaContraEdificio = defesaContraEdificio;
     }
+
+    @Override
+    public String toString() {
+        return "Defesa{" +
+                "defesaSemBlindagem=" + defesaSemBlindagem +
+                ", defesaContraBlindagemLeve=" + defesaContraBlindagemLeve +
+                ", defesaContraBlindagemPessada=" + defesaContraBlindagemPessada +
+                ", defesaContraAviao=" + defesaContraAviao +
+                ", defesaContraNavio=" + defesaContraNavio +
+                ", defesaContraSubmarino=" + defesaContraSubmarino +
+                ", defesaContraEdificio=" + defesaContraEdificio +
+                '}';
+    }
 }

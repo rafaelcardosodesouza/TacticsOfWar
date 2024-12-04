@@ -1,5 +1,7 @@
 package org.example.entities.atributos;
 
+import java.util.Arrays;
+
 public class Terreno {
     private double efeitoTerrenoPlanice[] = new double[3]; //vida | velocidade | força
     private double efeitoTerrenoColinas[] = new double[3]; //vida | velocidade | força
@@ -63,5 +65,17 @@ public class Terreno {
 
     public void setEfeitoTerrenoMar(double[] efeitoTerrenoMar) {
         this.efeitoTerrenoMar = efeitoTerrenoMar;
+    }
+
+    @Override
+    public String toString() {
+        return "Terreno{" +
+                "efeitoTerrenoPlanice=" + Arrays.toString(efeitoTerrenoPlanice) +
+                ", efeitoTerrenoColinas=" + Arrays.toString(efeitoTerrenoColinas) +
+                ", efeitoTerrenomontanha=" + Arrays.toString(efeitoTerrenomontanha) +
+                ", efeitoTerrenoFloresta=" + Arrays.toString(efeitoTerrenoFloresta) +
+                ", efeitoTerrenoUrbana=" + Arrays.toString(efeitoTerrenoUrbana) +
+                ", efeitoTerrenoMar=" + Arrays.toString(efeitoTerrenoMar) +
+                '}';
     }
 }

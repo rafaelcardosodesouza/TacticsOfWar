@@ -84,4 +84,18 @@ public class Dano {
     public void setDanoContraMoral(double danoContraMoral) {
         this.danoContraMoral = danoContraMoral;
     }
+
+    @Override
+    public String toString() {
+        return "Dano{" +
+                "danoSemBlindagem=" + danoSemBlindagem +
+                ", danoContraBlindagemLeve=" + danoContraBlindagemLeve +
+                ", danoContraBlindagemPessada=" + danoContraBlindagemPessada +
+                ", danoContraAviao=" + danoContraAviao +
+                ", danoContraNavio=" + danoContraNavio +
+                ", danoContraSubmarino=" + danoContraSubmarino +
+                ", danoContraEdificio=" + danoContraEdificio +
+                ", danoContraMoral=" + danoContraMoral +
+                '}';
+    }
 }
